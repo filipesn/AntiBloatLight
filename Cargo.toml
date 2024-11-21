@@ -1,6 +1,10 @@
 [package]
-name = "antibloatlight"
-version = "1.0.3"
+name = "AntiBloatLight"
+version = "1.0.4"
+description = "An open source, lightweight alternative to SteelSeries GG for customising keyboard lighting colours."
+repository = "https://github.com/ScepticDope/AntiBloatLight"
+readme = "README.md"
+license = "MIT"
 edition = "2021"
 
 [dependencies]

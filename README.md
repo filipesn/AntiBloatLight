@@ -48,19 +48,18 @@ The project uses the following dependencies:
     hidapi - A Rust crate for cross-platform HID device communication.
 
 You can find the latest version of the hidapi crate on [crates.io](https://crates.io/crates/hidapi).
-Cargo.toml:
-```
-[package]
-name = "antibloatlight"
-version = "1.0.3"
-edition = "2021"
 
+<details>
+<summary><strong>File: Cargo.toml</strong></summary>
+
+```rust
 [dependencies]
 hidapi = "2.6.3" # Check for the latest version on https://crates.io/crates/hidapi
 ```
+</details>
 
 ## Usage
-After building the project, you can run the application by running `antibloatlight.exe`.
+After building the project, you can run the application by running `AntiBloatLight.exe`.
 
 The application will search for a connected HID device with the specified Vendor ID, Product ID, and Interface Number. Once found, it will send a raw data packet to the device.
 
@@ -113,7 +112,7 @@ Below is the code you need to modify. If you have multiple HID entries (e.g., my
 ```
 </details>
 
-You can place `antibloatlight.exe`, or a shortcut to it, in your startup folder so it runs once automatically after startup.  
+You can place `AntiBloatLight.exe`, or a shortcut to it, in your startup folder so it runs once automatically after startup.  
 To easily access this folder, press `Win + R`, type `shell:startup`, and press Enter.
 
 ## License

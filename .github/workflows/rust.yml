@@ -27,4 +27,4 @@ jobs:
       - name: Upload .exe to Release
         uses: softprops/action-gh-release@v2
         with:
-          files: target/release/antibloatlight.exe
+          files: target/release/AntiBloatLight.exe
