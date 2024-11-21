@@ -18,8 +18,8 @@ _You have two options to use this repository:_
 **Local Build**:  
 Ensure the following prerequisites are installed before building:
 
-1. **Windows >= 10**  
-   This program has only been tested on Windows 10 as of now but it might also work on Windows 11.
+1. **Supported Operating Systems**  
+   Tested on Windows 10 and 11. <sub><sup>_Credit to [JayRom95_fr](https://www.reddit.com/r/steelseries/comments/1gubzvp/comment/ly7yo92/) for testing Windows 11._</sup></sub>
 
 2. **Rust Programming Language**  
    Ensure you have the Rust toolchain installed. If you don't have it, install Rust using [rustup](https://rustup.rs/).
