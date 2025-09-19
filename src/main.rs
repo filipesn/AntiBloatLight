@@ -37,7 +37,7 @@ fn main() -> io::Result<()> {
         .find(|device| {
             device.vendor_id() == 0x1038
                 && device.product_id() == 0x1628
-                && device.interface_number() == 0x02
+                && device.interface_number() == 0x01
         })
         .expect(
             "No device found with Vendor ID 0x1038 and Product ID 0x1628 and Interface Number 0x02.",
