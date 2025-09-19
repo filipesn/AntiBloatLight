@@ -36,17 +36,18 @@ fn main() -> io::Result<()> {
         .device_list()
         .find(|device| {
             device.vendor_id() == 0x1038
-                && device.product_id() == 0x1622
-                && device.interface_number() == 0x01
+                && device.product_id() == 0x1628
+                && device.interface_number() == 0x02
         })
         .expect(
-            "No device found with Vendor ID 0x1038 and Product ID 0x1622 and Interface Number 0x01.",
+            "No device found with Vendor ID 0x1038 and Product ID 0x1628 and Interface Number 0x02.",
         );
 
     println!(
-        "Selected device: Vendor ID: 0x{:X}, Product ID: 0x{:X}",
+        "Selected device: Vendor ID: 0x{:X}, Product ID: 0x{:X}, Interface: {}",
         selected_device_info.vendor_id(),
-        selected_device_info.product_id()
+        selected_device_info.product_id(),
+        selected_device_info.interface_number()
     );
 
     // Open the selected device using the HID API.
